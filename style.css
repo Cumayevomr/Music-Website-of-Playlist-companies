@@ -343,3 +343,14 @@ header .master_play .bar .dot::before {
     top: -6.5px;
     box-shadow: inset 0px 0px 3px #36e2ec;
 }
+
+header .master_play .bar input {
+    position: absolute;
+    width: 100%;
+    top: -7px;
+    left: 0;
+    cursor: pointer;
+    z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+    /* transition: 3s linear; */
+    opacity: 0;
+}
