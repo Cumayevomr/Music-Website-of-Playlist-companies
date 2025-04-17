@@ -306,7 +306,7 @@ header .master_play #currentStart {
 
 header .master_play .bar {
     position: relative;
-    width: 43px;
+    width: 43%;
     height: 2px;
     background: rgb( 105, 105, 105, .1);
     margin: 0px 15px 0px 10px;
@@ -353,4 +353,51 @@ header .master_play .bar input {
     z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999;
     /* transition: 3s linear; */
     opacity: 0;
+}
+
+header .master_play .vol {
+    position: relative;
+    width: 100px;
+    height: 2px;
+    background: rgb( 105, 105, 105, .1);
+    margin-left: 50px;
+}
+
+header .master_play .vol .bi{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    top: -17px;
+    left: -30px;
+}
+
+header .master_play .vol input {
+    position: absolute;
+    width: 100%;
+    top: -6px;
+    left: 0;
+    cursor: pointer;
+    z-index: 999999999999999999999;
+    opacity: 0;
+}
+
+header .master_play .vol .vol_bar {
+    position: absolute;
+    background: #36e2ec;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    transition: 1s linear;
+}
+
+header .master_play .vol .dot {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #36e2ec;
+    border-radius: 50%;
+    left: -7px;
+    top: -6.5px;
+    box-shadow: inset 0px 0px 3px #36e2ec;
 }
