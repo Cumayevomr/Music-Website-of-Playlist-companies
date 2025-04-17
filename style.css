@@ -391,6 +391,17 @@ header .master_play .vol .vol_bar {
 }
 
 header .master_play .vol .dot {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #363636;
+    border-radius: 50%;
+    left: 0%;
+    top: -1.5px;
+    transition: 1s linear;
+}
+
+header .master_play .vol .dot::before {
     content: '';
     position: absolute;
     width: 15px;
