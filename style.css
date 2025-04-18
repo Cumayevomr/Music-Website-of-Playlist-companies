@@ -522,7 +522,7 @@ header .song_side nav .user img {
 header .song_side .content {
     width: 90%;
     height: 30%;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
     margin: auto;
     padding-top: 20px;
 }
@@ -568,4 +568,18 @@ header .song_side .content .buttons button:nth-last-child(2) {
 header .song_side .content .buttons button:nth-last-child(2):hover {
     background: #36e2ec;
     color: #fff;
+}
+
+header .song_side .popular_song {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid #fff;
+}
+
+header .song_side .popular_song h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
