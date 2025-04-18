@@ -538,3 +538,34 @@ header .song_side .content p {
     color: #4c5262;
     margin: 5px;
 }
+
+header .song_side .content .buttons {
+    margin-top: 15px;
+}
+
+header .song_side .content .buttons button {
+    width: 130px;
+    height: 30px;
+    border: 2px solid #36e2ec;
+    outline: none;
+    border-radius: 20px;
+    background: #5adae0;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song_side .content .buttons button:hover {
+    background: none;
+    color: #36e2ec;
+}
+
+header .song_side .content .buttons button:nth-last-child(2) {
+    background: none;
+    color: #36e2ec;
+}
+
+header .song_side .content .buttons button:nth-last-child(2):hover {
+    background: #36e2ec;
+    color: #fff;
+}
