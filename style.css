@@ -663,3 +663,27 @@ header .song_side .popular_song .pop_song li h5 .subtitle {
     text-overflow: ellipsis;
     color: #4c5262;
 }
+
+header .song_side .popular_artists {
+    width: 90%;
+    height: auto;
+    border: 1px solid #fff;
+    margin: auto;
+    margin-top: 15px;
+}
+
+header .song_side .popular_artists .h4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .song_side .popular_artists .h4 .bi {
+    color: #a4a8a4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+header .song_side .popular_artists .h4 .bi:hover {
+    color: #fff;
+}
