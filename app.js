@@ -130,6 +130,25 @@ masterPlay.addEventListener('click', () => {
     }
 });
 
+let index = 0;
+let poster_master_play = document.getElementById('poster_master_play');
+Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
+    e.addEventListener('click', (el)=> {
+        index = el.target.id;
+        // console.log(index);
+        music.src = `audio/${index}.mp3`;
+        music.play();
+    })
+})
+
+
+
+
+
+
+
+
+
 
 let pop_song_left = document.getElementById('pop_song_left');
 let pop_song_right = document.getElementById('pop_song_right');
