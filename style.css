@@ -317,7 +317,7 @@ header .master_play .bar {
 header .master_play .bar .bar2 {
     position: absolute;
     background: #36e2ec;
-    width: 50%;
+    width: 0%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -386,7 +386,7 @@ header .master_play .vol input {
 header .master_play .vol .vol_bar {
     position: absolute;
     background: #36e2ec;
-    width: 50%;
+    width: 100%;
     height: 100%;
     top: 0;
     transition: 1s linear;
@@ -398,7 +398,7 @@ header .master_play .vol .dot {
     height: 5px;
     background: #363636;
     border-radius: 50%;
-    left: 0%;
+    left: 100%;
     top: -1.5px;
     transition: 1s linear;
 }
