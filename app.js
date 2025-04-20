@@ -132,12 +132,26 @@ masterPlay.addEventListener('click', () => {
 
 let index = 0;
 let poster_master_play = document.getElementById('poster_master_play');
+let title = document.getElementById('title');
 Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
     e.addEventListener('click', (el)=> {
         index = el.target.id;
         // console.log(index);
         music.src = `audio/${index}.mp3`;
+        poster_master_play.src = `img/${index}.jpg`;
         music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+
+        let songTitles = songs.filter((els) =>{
+            return els.id == index;
+        });
+
+        songTitles.forEach(elss => {
+            let {songName} = elss;
+            title.innerHTML = songName;
+        })
+
     })
 })
 
