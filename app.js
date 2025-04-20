@@ -130,6 +130,12 @@ masterPlay.addEventListener('click', () => {
     }
 });
 
+const makeAllBackground = () => {
+    Array.from(document.getElementsByClassName('songItem')).forEach((el)=>{
+        el.style.background = 'rgb(105, 105, 105, .0';
+    })
+}
+
 let index = 0;
 let poster_master_play = document.getElementById('poster_master_play');
 let title = document.getElementById('title');
@@ -143,18 +149,20 @@ Array.from(document.getElementsByClassName('playListPlay')).forEach((e)=>{
         masterPlay.classList.remove('bi-play-fill');
         masterPlay.classList.add('bi-pause-fill');
 
-        let songTitles = songs.filter((els) =>{
+        let songTitles = songs.filter((els) => {
             return els.id == index;
         });
 
         songTitles.forEach(elss => {
             let {songName} = elss;
             title.innerHTML = songName;
-        })
+        });
+
+        makeAllBackground();
+        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = "rgb(105, 105, 105, .1)";
 
     })
 })
-
 
 
 
