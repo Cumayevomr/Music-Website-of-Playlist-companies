@@ -234,6 +234,10 @@ vol.addEventListener('change', () => {
         vol_icon.classList.remove('bi-volume-down-fill');
         vol_icon.classList.remove('bi-volume-off-fill');
     }
+    let vol_a = vol.value;
+    vol_bar.style.width = `${vol_a}%`;
+    vol_dot.style.left = `${vol_a}%`;
+    music.volume = vol_a / 100;
 })
 
 
