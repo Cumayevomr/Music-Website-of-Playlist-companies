@@ -241,6 +241,36 @@ vol.addEventListener('change', () => {
 })
 
 
+let back = document.getElementById('back');
+let next = document.getElementById('next');
+
+back.addEventListener('click', () => {
+    index -= 1;
+    if (index < 1) {
+        index = Array.from(document.getElementsByClassName('songItem')).length;
+    }
+    music.src = `audio/${index}.mp3`;
+        poster_master_play.src = `img/${index}.jpg`;
+        music.play();
+        masterPlay.classList.remove('bi-play-fill');
+        masterPlay.classList.add('bi-pause-fill');
+
+        let songTitles = songs.filter((els) => {
+            return els.id == index;
+        });
+
+        songTitles.forEach(elss => {
+            let {songName} = elss;
+            title.innerHTML = songName;
+        });
+
+        makeAllBackground();
+        Array.from(document.getElementsByClassName('songItem'))[index - 1].style.background = "rgb(105, 105, 105, .1)";
+        makeAllplays();
+        el.target.classList.remove('bi-play-circle-fill');
+        el.target.classList.add('bi-pause-circle-fill');
+        wave .classList.add('active1');
+})
 
 
 
